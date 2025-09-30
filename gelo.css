@@ -1,0 +1,68 @@
+/* Fundo da página */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #f0f0f0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título com efeito rainbow animado */
+.raibow {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 100%;
+    animation: rainbowMove 6s linear infinite;
+}
+
+/* Animação do arco-íris */
+@keyframes rainbowMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Subtítulos */
+h2 {
+    color: #ffd166;
+    margin-top: 25px;
+    border-left: 5px solid #ffd166;
+    padding-left: 10px;
+}
+
+/* Parágrafos */
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+/* Imagem */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
